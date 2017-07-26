@@ -51,7 +51,7 @@ gulp.task('watch', () => {
 });
 
 
-gulp.task('browser-sync', () => {
+gulp.task('browser-sync', ['sass'], () => {
     browserSync.init({
         server: {
             baseDir: "./tmp"
