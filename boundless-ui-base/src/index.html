@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Boundless ui-base</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Mono:500|Fira+Sans:400,500|Playfair+Display:700,900" rel="stylesheet">
+
+
+        <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+        <link rel="stylesheet" type="text/css" href="libs/normalize.css">
+        <link rel="stylesheet" href="css/base-sample-page.css">
+
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+        <h1>Boundless ui-base</h1>
+
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>This is a sample page that serves as a quick way to see all common components.  It can also be used as a reference in development while developing individual components.</p>
+
+            <p>Given more time this role should probably be relegated to something like <a href="https://github.com/frctl" target="_blank">Fractal</a> but for now this is usable.</p>
+        </section>
+
+        <section id="grid">
+            <h2>Grid</h2>
+            I'm trying something new (to me) here and using a grid that does not require the use of css classes to define layout.  In order to define a component's width on the page, simply import the <code>grid</code> file and then define your widths using the shorthand defined <a href="http://susy.readthedocs.io/shorthand/">here</a>.
+
+            This was done partly as a learning exercise but also because I think that the type of content we'll be serving up will benefit from an approach like this in terms of accessibility, SEO, and long-term maintainance by creating cleaner html markup.
+        </section>
+
+        <section id="nav">
+            <h2><code>nav</code></h2>
+                <nav>
+                    <img src="img/logo.svg" class="logo">
+                    <div class="nav-links">
+                      <a href="#" class="nav-item">home</a>
+                      <a href="#" class="nav-item">help</a>
+                      <a href="#" class="nav-item">sign-up</a>
+                      <a href="#" class="nav-item">log in</a>
+                    </div>
+                </nav>
+        </section>
+
+        <section id="hero">
+            <h2>hero</h2>
+                <div class="hero">
+                    <div class="center-content">
+                        <h1>
+                            Lorem ipsum dolor site
+                            amotcon secteuer
+                            adipiscinm elsed daeom
+                        </h1>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <section>
+            <h2>card</h2>
+            <div class="demo-wrapper">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>With action</h3>
+                    </div>
+                    <p class="caption card-action">lorem ipsum</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Without action</h3>
+                        This card contains no action
+                    </div>
+                </div>
+
+                <div class="card card-accented">
+                    <div class="card-content">
+                        <h3>Accented</h3>
+                        This card is an accented card
+                    </div>
+                    <p class="caption card-action">lorem ipsum</p>
+                </div>
+
+                <div class="card card-muted">
+                    <div class="card-content">
+                        <h3>Muted</h3>
+                    </div>
+                    <p class="caption card-action">lorem ipsum</p>
+                </div>
+
+                <div class="card card-muted card-long">
+                    <div class="card-content">
+                        <h3>Long</h3>
+                    </div>
+                    <p class="caption card-action">lorem ipsum</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <footer>I am a footer</footer>
+        </section>
+
+        <section id="button">
+            <h2><code>button</code></h2>
+            <div class="button-demo-wrapper">
+                <button class="bl-button">Hello</button>
+                <button class="bl-button">This button has longer text</button>
+            </div>
+        </section>
+
+        <section id="searchbox">
+            <h2>searchbox</h2>
+            <input type="search" name="searchbox" placeholder="DOLOR SITAMOTO"><button></button>
+        </section>
+    </body>
+</html>

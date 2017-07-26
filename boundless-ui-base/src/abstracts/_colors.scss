@@ -1,0 +1,49 @@
+// Base Colors.  Reference these in variables that are less abstract below
+$accents-taupe: #998A7F;
+$accents-peach: #D4BAA3;
+$accents-teal: #4C6266;
+$accents-moss: #4D8C8C;
+
+$neutrals-black: #262626;
+$neutrals-paper: #D9D9D9;
+$neutrals-white: #FFFFFF;
+
+// Variables
+$page-background-color: $neutrals-paper;
+
+// Nav
+$navigation-primary-color: $accents-taupe;
+$navigation-link-color: $neutrals-white;
+
+// Hero
+$hero-text-color: $neutrals-white;
+
+// Card
+$card-bg-color: $neutrals-white;
+$card-headline-color: $neutrals-black;
+$card-text-color: $accents-taupe;
+
+$card-action-text-color: $accents-moss;
+$card-action-decoration-color: $accents-taupe;
+
+// Accented Card
+$card-bg-accented-color: $accents-taupe;
+$card-bg-accented-pattern-color: $accents-teal;
+$card-accented-headline-color: $neutrals-white;
+$card-accented-text-color: rgba($neutrals-black, 0.5);
+
+$card-action-accented-text-color: $neutrals-white;
+$card-action-accented-decoration-color: $neutrals-white;
+
+// Muted Card
+$card-bg-muted-color: $accents-teal;
+$card-bg-muted-pattern-color: $accents-moss;
+$card-muted-headline-color: $neutrals-white;
+
+$card-action-muted-text-color: $accents-peach;
+$card-action-muted-decoration-color: $accents-peach;
+
+$category-icon-color: rgba($neutrals-black, 0.5);
+
+// Footer
+$footer-bg-color: $neutrals-black;

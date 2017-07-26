@@ -1,0 +1,36 @@
+@mixin category-icon($icon-name, $color) {
+  $categories: (
+    ask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.ask-icon{fill:#{$color};}</style></defs><title>ask</title><path class="ask-icon" d="M17,19.2,12.345,16H3V2H17ZM4,15h8.655L16,17.3V3H4Zm5.986-1.935a.65.65,0,1,1,.65-.65A.65.65,0,0,1,9.986,13.065Zm.514-2.5h-1a1.917,1.917,0,0,1,1.076-1.657,1.6,1.6,0,0,0,.924-1.53A1.417,1.417,0,0,0,10,6.065,1.417,1.417,0,0,0,8.5,7.378h-1A2.414,2.414,0,0,1,10,5.065a2.414,2.414,0,0,1,2.5,2.313,2.564,2.564,0,0,1-1.359,2.355C10.7,10.037,10.5,10.187,10.5,10.565Z"/></svg>'),
+    help: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.help-icon{fill:#{$color};}</style></defs><title>help</title><path class="help-icon" d="M10,18a7.977,7.977,0,0,1-5.657-2.339h0a8.009,8.009,0,0,1,0-11.314h0A8,8,0,1,1,10,18ZM5.416,15.291a7.013,7.013,0,0,0,9.168,0l-2.131-2.13a4.093,4.093,0,0,1-4.906,0Zm7.744-2.837,2.131,2.13a7.011,7.011,0,0,0,0-9.167L13.16,7.547a4,4,0,0,1,0,4.907ZM4.709,5.416a7.011,7.011,0,0,0,0,9.167l2.131-2.13a4,4,0,0,1,0-4.907ZM10,7a2.979,2.979,0,0,0-2.121.878h0a3,3,0,0,0,0,4.243,3.073,3.073,0,0,0,4.242,0A3,3,0,0,0,10,7Zm0-1a3.968,3.968,0,0,1,2.453.839l2.131-2.13a7.013,7.013,0,0,0-9.168,0l2.131,2.13A3.968,3.968,0,0,1,10,6Z"/></svg>'),
+    document: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.document-icon{fill:#{$color};}</style></defs><title>document</title><path class="document-icon" d="M12.069,2H3V18H17V7.033Zm.29,1.725,2.857,2.916H12.359ZM4,17V3h7.359V7.641H16V17Zm2.5-7h7v1h-7Zm0,3h7v1h-7Z"/></svg>')
+  );
+
+  &:before {
+    content: map-get($categories, $icon-name);
+    width: asRem(20px);
+    display: block;
+  }
+
+  h3 {
+    margin-top: 0.02rem;
+  }
+}
+
+@mixin decorative-slash($color, $size) {
+  &:before {
+    width: $size;
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    display: block;
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.71 20.71"><title>small slash</title><g><g><line x1="20.35" y1="0.35" x2="0.35" y2="20.35" style="fill:none;stroke:#{$color};stroke-miterlimit:10"/></g></g></svg>');
+  }
+}
+
+@function asRem($size) {
+  $remSize: $size / 14px;
+//Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}
+
+

@@ -1,0 +1,39 @@
+@import "../abstracts/colors";
+
+.bl-button {
+  cursor: pointer;
+  border: 2px solid rgba($accents-peach, 0.6);
+  background-color: Transparent;
+  background-repeat:no-repeat;
+
+  font-family: 'Fira Mono', monospace;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: white;
+  padding: 1rem;
+  position: relative;
+
+  &:hover {
+    color: white;
+    background-color: rgba($accents-moss, 0.3);
+  }
+
+  &:after {
+    content: "|";
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  &:before {
+    content: url(/img/arrow.svg);
+    display: block;
+    width: 1rem;
+    position: absolute;
+    right: 10px;
+    color: white;
+  }
+}

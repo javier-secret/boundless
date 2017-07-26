@@ -1,0 +1,47 @@
+nav {
+  padding: 1rem;
+  min-height: 64px;
+  background-color: $navigation-primary-color;
+
+  .logo {
+    width: asRem(100px);
+    height: asRem(24px);
+  }
+
+  .nav-links {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    color: $navigation-link-color;
+
+    .nav-item {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $small) {
+    position: relative;
+    z-index: 5;
+
+    padding: 0 1rem 0 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    .nav-links {
+      margin: 0 0 0 auto;
+      display: inline;
+
+      a:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      a:not(:first-child) {
+        margin-left: asRem(20px);
+      }
+    }
+  }
+}
+

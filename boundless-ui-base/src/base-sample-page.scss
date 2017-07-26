@@ -1,0 +1,35 @@
+@import "main";
+
+aside {
+  a {
+    display: block;
+  }
+  @media (min-width: $small) {
+    @include span(3);
+  }
+}
+
+section {
+  box-sizing: border-box; // allows us to have padding
+  @include span(12);
+}
+
+.button-demo-wrapper {
+  background: url(/img/bg.jpg);
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:  row;
+
+  button {
+    margin: 1rem;
+  }
+}
+
+.card {
+  margin-top: 1rem;
+}
+
+footer {
+  margin-top: 6rem;
+}

@@ -1,0 +1,37 @@
+.hero {
+  padding: 1rem;
+  padding-bottom: 3rem;
+  color: $hero-text-color;
+  text-align: center;
+
+  background-image: url(/img/bg.jpg);
+  background-size: cover;
+
+  p {
+    @include body-large;
+  }
+
+  @media (min-width: $large) {
+    background-size: cover;
+    backgound-position: center;
+
+    width: 100%;
+    height: asRem(792px);
+
+    display: flex;
+    position: relative;
+
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+
+    .center-content {
+      width: asRem(496px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      margin-top: asRem(255px);
+    }
+  }
+}

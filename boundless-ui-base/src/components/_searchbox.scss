@@ -1,0 +1,36 @@
+input[type="search"] {
+    border: none;
+    outline: none;
+    padding: asRem(24px);
+    padding-right: asRem(5px);
+    font-family: 'Fira Mono', monospace;
+    font-size: asRem(12px);
+    line-height: asRem(16px);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &+ button {
+      cursor: pointer;
+      outline: none;
+      height: asRem(64px);
+      border: none;
+      background-color: white;
+      background-image: url(/img/search.svg);
+      background-size: asRem(20px);
+      width: asRem(64px);
+      background-position-y: asRem(22px);
+      background-position-x: asRem(16px);
+      background-repeat: no-repeat;
+      position: relative;
+
+      &:before {
+        content: "|";
+        display: block;
+        position: relative;
+        left: asRem(-32px);
+        font-size: asRem(1rem);
+        top: asRem(1px);
+      }
+    }
+}

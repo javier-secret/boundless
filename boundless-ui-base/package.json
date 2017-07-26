@@ -1,18 +1,20 @@
 {
-  "name": "ui-base",
+  "name": "boundless-ui-base",
   "version": "1.0.0",
   "description": "base styles for boundless web properties",
   "main": "index.js",
   "author": "Javier Evans",
   "license": "MIT",
   "dependencies": {
+    "susy": "2.2.12"
+  },
+  "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
-    "gulp-util": "^3.0.8",
-    "susy": "2.2.12"
+    "gulp-util": "^3.0.8"
   }
 }

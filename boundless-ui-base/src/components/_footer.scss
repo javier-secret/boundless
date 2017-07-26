@@ -1,0 +1,18 @@
+footer {
+  background-color: $footer-bg-color;
+  @include topo-background($accents-peach, 0.1);
+
+  &:before {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    content: "&";
+    font-size: 90px;
+    display: block;
+    top: -50px;
+    position: relative;
+  }
+
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
