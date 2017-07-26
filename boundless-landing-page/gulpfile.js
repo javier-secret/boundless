@@ -1,9 +1,6 @@
 const gulp = require('gulp');
 const gutil = require('gulp-util');
 const sass = require('gulp-sass');
-// const csso = require('gulp-csso');
-const sourcemaps = require('gulp-sourcemaps');
-// const autoprefixer = require('gulp-autoprefixer');
 const clean = require('gulp-clean');
 
 const browserSync = require('browser-sync').create();
@@ -11,7 +8,7 @@ const { reload } = browserSync;
 
 const libSrc = './node_modules/boundless-ui-base/src/vendor/**/*';
 const imgSrc = './node_modules/boundless-ui-base/src/img/**/*';
-const uiBaseSrc = './node_modules/boundless-ui-base/tmp/css/base-sample-page.css';
+const uiBaseSrc = './node_modules/boundless-ui-base/tmp/css/components-sample.css';
 
 const sassSrc = './src/styles/main.scss';
 const htmlSrc = './src/**/*.html';

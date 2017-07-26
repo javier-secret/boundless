@@ -1,18 +1,27 @@
 footer {
   background-color: $footer-bg-color;
-  @include topo-background($accents-peach, 0.1);
+  @include topo-background($footer-bg-pattern-color, 0.1);
+  margin-top: 5rem;
+  text-align: center;
+  padding: 2rem;
+  color: $footer-text-color;
 
   &:before {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
+    color: $footer-accent-color;
     content: "&";
     font-size: 90px;
     display: block;
-    top: -50px;
+    top: asRem(-50px);
     position: relative;
+
   }
 
-  text-align: center;
-  padding: 2rem;
-  color: white;
+  @media (min-width: $medium) {
+    .footer-content {
+      @include span(6 of 12);
+      @include push(3);
+    }
+  }
 }

@@ -1,27 +1,31 @@
-input[type="search"] {
+.search-field {
+  display: inline-flex;
+
+  input[type="search"] {
+    @include caption;
+    height: asRem(64px);
     border: none;
     outline: none;
+
     padding: asRem(24px);
-    padding-right: asRem(5px);
-    font-family: 'Fira Mono', monospace;
-    font-size: asRem(12px);
-    line-height: asRem(16px);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-decoration: none;
 
     &+ button {
+      height: asRem(64px);
+      width: asRem(64px);
+
       cursor: pointer;
       outline: none;
-      height: asRem(64px);
       border: none;
+      padding: 0;
+
       background-color: white;
       background-image: url(/img/search.svg);
-      background-size: asRem(20px);
-      width: asRem(64px);
-      background-position-y: asRem(22px);
-      background-position-x: asRem(16px);
+      background-size: 30%;
       background-repeat: no-repeat;
+      background-color: white;
+      background-position-x: asRem(22px);
+      background-position-y: asRem(23px);
+
       position: relative;
 
       &:before {
@@ -29,8 +33,9 @@ input[type="search"] {
         display: block;
         position: relative;
         left: asRem(-32px);
-        font-size: asRem(1rem);
+        font-size: 1rem;
         top: asRem(1px);
       }
     }
+  }
 }

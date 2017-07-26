@@ -4,6 +4,8 @@
   color: $hero-text-color;
   text-align: center;
 
+
+
   background-image: url(/img/bg.jpg);
   background-size: cover;
 
@@ -11,13 +13,10 @@
     @include body-large;
   }
 
-  @media (min-width: $large) {
-    background-size: cover;
-    backgound-position: center;
-
+  @media (min-width: $medium) {
+    height: asRem(500px);
     width: 100%;
-    height: asRem(792px);
-
+    
     display: flex;
     position: relative;
 
@@ -31,6 +30,15 @@
       flex-direction: column;
       align-items: center;
       margin: auto;
+      margin-top: asRem(20px);
+    }
+  }
+
+  @media (min-width: $large) {
+    background-position-y: asRem(-247px);
+    height: asRem(792px);
+
+    .center-content {
       margin-top: asRem(255px);
     }
   }

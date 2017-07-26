@@ -8,10 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Fira+Mono:500|Fira+Sans:400,500|Playfair+Display:700,900" rel="stylesheet">
 
-
-        <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
         <link rel="stylesheet" type="text/css" href="libs/normalize.css">
-        <link rel="stylesheet" href="css/base-sample-page.css">
+        <link rel="stylesheet" href="css/components-sample.css">
 
         <!--[if lt IE 9]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -30,9 +28,9 @@
 
         <section id="grid">
             <h2>Grid</h2>
-            I'm trying something new (to me) here and using a grid that does not require the use of css classes to define layout.  In order to define a component's width on the page, simply import the <code>grid</code> file and then define your widths using the shorthand defined <a href="http://susy.readthedocs.io/shorthand/">here</a>.
+            <p>I'm trying something new (to me) here and using a grid that does not require the use of css classes to define layout.  In order to define a component's width on the page, simply import the <code>grid</code> file and then define your widths using the shorthand defined <a href="http://susy.readthedocs.io/shorthand/">here</a>.</p>
 
-            This was done partly as a learning exercise but also because I think that the type of content we'll be serving up will benefit from an approach like this in terms of accessibility, SEO, and long-term maintainance by creating cleaner html markup.
+            <p>This was done partly as a learning exercise but also because I think that the type of content we'll be serving up will benefit from an approach like this in terms of accessibility, SEO, and long-term maintainance by creating cleaner html markup.</p>
         </section>
 
         <section id="nav">
@@ -65,7 +63,7 @@
                 </div>
         </section>
 
-        <section>
+        <section id="card">
             <h2>card</h2>
             <div class="demo-wrapper">
                 <div class="card">
@@ -106,21 +104,23 @@
             </div>
         </section>
 
-        <section>
+        <section id="footer">
+            <h2><code>footer</code></h2>
             <footer>I am a footer</footer>
         </section>
 
         <section id="button">
             <h2><code>button</code></h2>
             <div class="button-demo-wrapper">
-                <button class="bl-button">Hello</button>
-                <button class="bl-button">This button has longer text</button>
+                <button class="bl-button">button</button>
             </div>
         </section>
 
         <section id="searchbox">
             <h2>searchbox</h2>
-            <input type="search" name="searchbox" placeholder="DOLOR SITAMOTO"><button></button>
+            <div class="search-field">
+                <input type="search" name="searchbox" placeholder="DOLOR SITAMOTO"><button></button>
+            </div>
         </section>
     </body>
 </html>

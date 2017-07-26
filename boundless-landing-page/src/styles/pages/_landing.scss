@@ -25,30 +25,38 @@
   margin-top: 1rem;
 
   @media (min-width: $large) {
-    &.one {
+    &.news-primary {
       @include span(3 of 12);
       min-height: 536px;
     }
     
-    &.two {
+    &.news-two {
       @include span(6 of 12);
     }
 
-    &.three {
+    &.news-three {
       @include span(3 of 12 last);
     }
 
-    &.four {
+    &.news-four {
       @include span(3 of 12);
     }
 
-    &.five {
+    &.news-five {
       @include span(6 of 12 last);
     }
   }
 }
 
 footer {
-  @include span(12 of 12 last);
-  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  p {
+    @include h2;
+    margin-bottom: 3rem;
+  }
+
+  .search-field {
+    margin-bottom: 2rem;
+  }
 }

@@ -1,14 +1,12 @@
 const gulp = require('gulp');
 const gutil = require('gulp-util');
 const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
-const concat = require('gulp-concat');
 const clean = require('gulp-clean');
 const browserSync = require('browser-sync').create();
 const { reload } = browserSync;
 
 const libSrc = ['./src/vendor/**/*'];
-const sassSrc = './src/base-sample-page.scss';
+const sassSrc = './src/pages/components-sample.scss';
 const imgSrc = './src/img/**/*';
 const htmlSrc = './src/**/*.html';
 

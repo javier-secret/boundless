@@ -1,19 +1,11 @@
-@import "../abstracts/colors";
-
 .bl-button {
   cursor: pointer;
   border: 2px solid rgba($accents-peach, 0.6);
   background-color: Transparent;
   background-repeat:no-repeat;
 
-  font-family: 'Fira Mono', monospace;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  color: white;
+  @include caption
+  color: $bl-button-text-color;
   padding: 1rem;
   position: relative;
 
@@ -33,7 +25,7 @@
     display: block;
     width: 1rem;
     position: absolute;
-    right: 10px;
-    color: white;
+    right: asRem(10px);
+    color: $bl-button-text-color;
   }
 }
